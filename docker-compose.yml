@@ -1,0 +1,20 @@
+version: '3.8'
+services:
+  db-node-a:
+    image: postgres:15
+    container_name: db-node-a
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: password123
+      POSTGRES_DB: inventaris_a
+    ports:
+      - "5433:5432"
+  db-node-b:
+    image: postgres:15
+    container_name: db-node-b
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: password123
+      POSTGRES_DB: inventaris_b
+    ports:
+      - "5434:5432"
