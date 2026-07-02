@@ -1,3 +1,5 @@
+cat <<EOF> app.py
+
 import psycopg2
 
 def get_conn_a():
