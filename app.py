@@ -30,4 +30,4 @@ simpan_barang("Monitor", 5, "B")
 EOF
 
 pythone3 app.py
-docker exec -it db-node-a psql - U admin -d iventaris_a -c "SELECT * FROM barang";
+docker exec -it db-node-a psql -U admin -d inventaris_a -c "SELECT * FROM barang";
