@@ -29,5 +29,5 @@ simpan_barang("Keyboard", 20, "A")
 simpan_barang("Monitor", 5, "B")
 EOF
 
-pytone3 app.py
+pythone3 app.py
 docker exec -it db-node-a psql - U admin -d iventaris_a -c "SELECT * FROM barang";
